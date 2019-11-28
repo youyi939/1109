@@ -18,7 +18,6 @@ public class TittleFragment extends Fragment {
     private ListViewAdapter adapter;
     public List<Person> personList = new ArrayList<>();
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -60,7 +59,6 @@ public class TittleFragment extends Fragment {
         adapter = new ListViewAdapter(getContext(), R.layout.item, personList);
         adapter.notifyDataSetChanged();
         listView.setAdapter(adapter);
-
     }
 
 
